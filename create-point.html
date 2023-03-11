@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar um ponto de coleta</title>
+
+    <!-- CSS -->
+
+    <!-- ATENÇÃO!!!
+      A ordem dos arquivos CSS é super importante!
+      Repare abaixo que o arquivo main.css está sendo processado primeiro, por isso podemos recuperar o valor das variáveis das cores que setamos anteriormente no main.css e utilizá-las no create-point.css
+    -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/create-point.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page-create-point">
+      <!-- HEADER -->
+      <header>
+        <img src="./assets/logo.svg" alt="Logomarca Ecoleta" />
+        <a href="index.html">
+          <span></span>
+          Voltar para home
+        </a>
+      </header>
+
+      <!-- FORM -->
+      <form action="">
+        <h1>Cadastro do ponto de coleta</h1>
+
+        <!-- Primeiro campo -->
+        <fieldset>
+          <legend>
+            <h2>Dados da entidade</h2>
+          </legend>
+
+          <div class="field">
+            <label for="">Nome da entidade</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="address">Endereço</label>
+              <input type="text" name="address" />
+            </div>
+            <div class="field">
+              <label for="address2">Número/Complemento</label>
+              <input type="text" name="address2" />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="state">Estado</label>
+              <select name="uf">
+                <option value="">Selecione o Estado</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="city">Cidade</label>
+              <select name="city" disabled>
+                <option value="">Selecione a Cidade</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Segundo campo -->
+        <fieldset></fieldset>
+
+        <button type="submit">Cadastrar ponto de coleta</button>
+      </form>
+    </div>
+  </body>
+</html>
