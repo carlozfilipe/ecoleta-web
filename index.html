@@ -7,24 +7,29 @@
     <title>Ecoleta</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
-    
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-    />  
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  
   <body>
     <div id="page-home">
       <div class="content">
         <header>
-          <img src="./assets/logo.svg" alt="Logomarca Ecoleta" />
+          <a href="./index.html"><img src="./assets/logo.svg" alt="Logomarca Ecoleta" /></a>
           <a href="create-point.html">
             <span></span>
             Cadastre um ponto de coleta
@@ -36,9 +41,36 @@
           <p>
             Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.
           </p>
-          <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+          <a href="#"
+            ><span></span><strong>Pesquisar pontos de coleta</strong></a
+          >
         </main>
       </div>
     </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="hide">
+      <div class="content">
+        <div class="header">
+          <h1>Pontos de Coleta</h1>
+          <a href="#">Fechar</a>
+        </div>
+        <form action="./search-results.html">
+          <label for="search">Cidade</label>
+          <div class="search field">
+            <input
+              type="text"
+              name="search"
+              placeholder="Pesquise por cidade"
+            />
+            <button>
+              <img src="./assets/search.svg" alt="Buscar" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@
     text-align: center;
   }
 
-  #page-home header a {
+  #page-home header a:nth-child(2) {
     position: absolute;
     bottom: 48px;
     left: 50%;
@@ -17,6 +17,15 @@
 
   #page-home main {
     align-items: center;
+  }
+
+  /* search-results.html */
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #page-search-results .cards img {
+    height: 200px;
   }
 }
 
